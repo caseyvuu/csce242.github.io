@@ -1,0 +1,30 @@
+/*styles.css has a hierarchy from bottom to top*/
+
+/*Structure*/
+body {
+background-color:royalblue;
+}
+/*Tables*/
+td,
+th{
+    border:2px solid black;
+    border-collapse: collapse;
+    background-color:dodgerblue;
+}
+
+/*Typography(Fonts)*/
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    color:snow;
+}
+
+table{
+    color:snow;
+}
+
+h1{
+    color:whitesmoke;
+}
