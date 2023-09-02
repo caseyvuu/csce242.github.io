@@ -1,0 +1,59 @@
+/* Structure */
+body {
+    /*background:coral;*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#454ADE;
+    background:url(images/ocean2.jpg);
+}
+#content {
+    background:white;
+    width: 75%;
+    margin: auto;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+/* Navigation */
+#nav {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color:#454ADE;
+    padding: 4px;
+    background:dodgerblue;
+    border-radius: 2px;
+}
+a:hover {
+    background:skyblue;
+}
+
+/* Images */
+img {
+    padding: 5px;
+    margin: 20px;
+    border: 5px solid coral;
+    border-radius: 3px;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+th, td{
+    border: 2px solid black;
+    padding: 4px;
+    background:skyblue;
+}
+th {
+    background:coral;
+}
+/* Typography */
+h1, h2 {
+    color:coral;
+    text-align: center;
+}
+.bold {
+    font-size: 20px;
+}
+
