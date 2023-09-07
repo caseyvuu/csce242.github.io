@@ -1,0 +1,68 @@
+/* Structure */
+body {
+    background-color:aliceblue;
+}
+#main-header {
+    background-color:dodgerblue;
+}
+
+#main-content {
+    background-color:lightblue;
+}
+
+#main-footer {
+    background-color: skyblue;
+}
+
+.padded-area {
+    padding: 50px;
+    margin: auto;
+}
+
+.info {
+    border: 2px solid mediumblue;
+    background: darkcyan;
+}
+
+.info header {
+    background-color: cornflowerblue;
+    margin: 0, auto;
+}
+
+#main-nav ul {
+    padding-left: 6px;
+}
+
+#main-nav li {
+    list-style-type: none;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#main-nav a:hover{
+    border-bottom: 2px solid pink;
+    font-size: 2em;
+}
+
+/* Typography */
+body {
+
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width: 600px) {
+    #main-nav li {
+        display: inline-block; /*why is it doing the opposite*/
+    }
+
+    .columns {
+        display: flex;
+    }
+
+    .col1of2{
+        flex:1;
+    }
+}
