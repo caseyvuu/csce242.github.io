@@ -6,9 +6,7 @@ body {
 }
 
 #main-pg {
-    width: 75%;
-    margin: auto;
-    display: flex;
+    
 }
 
 #main-header {
@@ -29,7 +27,6 @@ a {
 }
 
 .assignment {
-    width: 30%;
     margin: 10px;
     padding: 40px 20px;
     background: whitesmoke;
@@ -54,8 +51,12 @@ h1, h2 {
 }
 
 /* Larger Resolutions */
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
     .flex-container {
         display: flex;
+    }
+
+    .assignment {
+        flex: 1;
     }
 }
