@@ -1,0 +1,317 @@
+/* Structure */
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main-header {
+    background-color: black;
+    margin-top: -10px;
+}
+
+#main-nav {
+    list-style-type: none;
+}
+
+ul, li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+#sectionONE {
+    margin-top: -24px;
+}
+
+#sectionONE ul {
+    background-color: #73000a;
+}
+
+#sectionTWO {
+    background-color: white;
+    margin-top: -24px;
+}
+
+#sectionTWO h1 {
+    background-color: #73000a;
+    color:white;
+    width: 40%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#sectionTWO h2,
+#sectionTWO p {
+    padding: 10px;
+    margin: 35px;
+}
+
+#sectionTHREE {
+    background-color: #73000a;
+}
+
+#sectionTHREE h2, 
+#sectionTHREE p {
+    color: white;
+    margin-left: 50%;
+    margin: 20px;
+}
+
+#sectionFOUR {
+    background: black;
+}
+#sectionFOUR h2,
+#sectionFOUR p,
+#sectionFOUR a {
+    color:white;
+    margin: 20px;
+}
+
+#sectionFIVE {
+    background-color: #ececec;
+}
+
+#sectionFIVE h1,
+#sectionFIVE p,
+#sectionFIVE a {
+    margin-left: 50%;
+    margin: 20px;
+}
+
+#sectionFIVE h1 {
+    color:#73000a;
+}
+
+#sectionFIVE p {
+    color: black;
+}
+
+#sectionSIX h1 {
+    color:#73000a;
+}
+
+#sectionSIX h2{
+    color:#73000a;
+}
+
+#sectionSEVEN {
+    background-color: #73000a;
+}
+
+#sectionSEVEN h1,
+#sectionSEVEN p,
+#sectionSEVEN a {
+    color:white;
+    margin-left: 50%;
+    margin: 20px;
+}
+
+#sectionSEVEN a,
+#sectionTEN a {
+    background-color: black;
+    text-decoration: none;
+    border: 5px solid white; 
+    color: white;
+    padding: 10px;
+}
+
+#sectionSEVEN a:hover,
+#sectionTEN a:hover {
+    color:#73000a;
+    border: 5px solid #73000a;
+    background-color: white;
+}
+
+#sectionEIGHT {
+    background-color: #ececec;
+}
+
+#sectionEIGHT h1 {
+    color:#73000a;
+    margin: 20px;
+}
+
+#sectionEIGHT p {
+    color: black;
+    margin: 20px;
+}
+
+#sectionEIGHT a,
+#sectionNINE a,
+#sectionFIVE a,
+#sectionFOUR a,
+#sectionELEVEN a {
+    background-color: #73000a;
+    color:white;
+    border: 5px solid white;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+#sectionEIGHT a:hover,
+#sectionNINE a:hover,
+#sectionFIVE a:hover,
+#sectionFOUR a:hover,
+#sectionELEVEN a:hover {
+    border: 5px solid #73000a;
+    background-color: white;
+    color:#73000a;
+}
+
+#sectionNINE {
+    background-color: #1f414d;
+}
+
+#sectionNINE h1,
+#sectionNINE p {
+    color:white;
+    margin-left: 50%;
+    margin:20px;
+}
+
+#sectionTEN {
+    background-image: url(images/pic11.gif);
+    padding: 150px;
+}
+
+#sTEN {
+    background-color: #73000a;
+    color: white;
+    margin-right: 20%;
+    padding: 30px;
+}
+
+#sectionELEVEN {
+    background-color: #ececec;
+}
+
+#sectionELEVEN h1, 
+#sectionELEVEN p {
+    margin-left: 50%;
+    margin:20px;
+}
+
+#sectionELEVEN h1 {
+    color:#73000a
+}
+
+#sectionELEVEN p {
+    color: black;
+}
+
+#LAST {
+    background-color: #73000a;
+    padding: 30px;
+    color:white;
+}
+
+#LAST a {
+    color: white;
+    text-decoration: none;
+}
+
+#LAST a:hover {
+    background-color: #cc2e40;
+}
+
+#LAST ul {
+    display: inline-block;
+}
+
+footer {
+    background-color: black;
+    margin-top: -16px;
+}
+
+footer a,
+footer li {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: small;
+}
+
+footer a:hover {
+    background-color: #cc2e40;
+}
+
+.big {
+    font-size: xx-large;
+}
+
+.last-part{
+    margin: 10px;
+    padding: 40px 20px;
+    background: whitesmoke;
+}
+
+/* Images */
+#main-header img,
+#LAST img {
+    display: block;
+    height:55px;
+}
+
+#sectionONE img {
+    margin-top: -24px;
+    margin-bottom: -10px;
+}
+
+#sectionTHREE img,
+#sectionFIVE img,
+#sectionNINE img,
+#sectionELEVEN img {
+    display: block;
+    margin-right: 50%;
+}
+
+#sectionFOUR img {
+    display: block;
+    margin-left: 0%;
+}
+
+#sectionEIGHT img {
+    display: block;
+    margin-left: 0%;
+    padding: 30px;
+}
+
+/* Typography */
+#main-header h2 {
+    font-size: small;
+    text-align: left;
+}
+
+#main-nav a,
+#sectionONE a,
+#sectionFIVE a {
+    text-decoration: none;
+    color: white;
+}
+
+#main-nav a:hover {
+    background:#cc2e40;
+}
+
+#sectionONE a:hover {
+    background-color: #cc2e40;
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width: 900px) {
+    #main-nav ul,
+    #sectionONE ul,
+    #sectionTHREE,
+    #sectionFOUR,
+    #sectionFIVE,
+    #sectionSEVEN,
+    #sectionEIGHT,
+    #sectionNINE,
+    #sectionELEVEN,
+    .flex-container {
+        display: flex;
+    }
+
+    .flex {
+        display: 1;
+    }
+}
