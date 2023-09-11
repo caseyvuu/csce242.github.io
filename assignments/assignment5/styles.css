@@ -253,6 +253,11 @@ footer a:hover {
     background: whitesmoke;
 }
 
+.always {
+    position:fixed;
+    top:0px;
+}
+
 /* Images */
 #main-header img,
 #LAST img {
