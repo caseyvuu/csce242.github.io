@@ -217,6 +217,10 @@ ul, li {
     display: inline-block;
 }
 
+#LAST li {
+    margin: -15px;
+}
+
 footer {
     background-color: black;
     margin-top: -16px;
@@ -236,6 +240,11 @@ footer a:hover {
 
 .big {
     font-size: xx-large;
+}
+
+.fix {
+    margin-bottom: -10px;
+    color: pink;
 }
 
 .last-part{
@@ -300,18 +309,9 @@ footer a:hover {
 @media only screen and (min-width: 900px) {
     #main-nav ul,
     #sectionONE ul,
-    #sectionTHREE,
-    #sectionFOUR,
-    #sectionFIVE,
-    #sectionSEVEN,
-    #sectionEIGHT,
-    #sectionNINE,
-    #sectionELEVEN,
     .flex-container {
         display: flex;
     }
 
-    .flex {
-        display: 1;
-    }
+    
 }
