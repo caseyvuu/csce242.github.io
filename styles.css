@@ -5,14 +5,6 @@ body {
     color:deepskyblue;
 }
 
-#main-header {
-    text-align: center;
-    background-color: snow;
-    padding: 5px;
-    margin: 30px;
-    border: 5px solid deepskyblue;
-}
-
 footer {
     text-align: center;
 }
@@ -20,6 +12,14 @@ footer {
 a {
     color:deepskyblue;
     text-decoration: none;
+}
+
+#main-header {
+    text-align: center;
+    background-color: snow;
+    padding: 5px;
+    margin: 30px;
+    border: 5px solid deepskyblue;
 }
 
 .assignment {
@@ -50,9 +50,10 @@ h1, h2 {
 @media only screen and (min-width: 900px) {
     .flex-container {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .assignment {
-        flex: 1;
+        flex: 20%;
     }
 }
