@@ -32,7 +32,7 @@ a {
 
 /* Images */
 img {
-    max-width:100%;
+    max-width:80%;
     background: lightcoral;
     display:block;
     margin: auto;
@@ -52,9 +52,16 @@ h1, h2 {
     .flex-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .assignment {
-        flex: 20%;
+        flex: 25%;
+        max-width:25%;
     }
+    
+    .fix-flex {
+        flex: 30%;
+    }
+
 }

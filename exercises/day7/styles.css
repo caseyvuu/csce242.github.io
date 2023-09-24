@@ -1,0 +1,62 @@
+/* Structure */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li {
+    background-color: dodgerblue;
+    padding: 10px;
+    margin: 2px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+/* Hamburger Menu */
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Typography */
+#main-nav-items {
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    #main-nav-items {
+        display: flex;
+    }
+
+    #main-nav-items li {
+        flex: 1;
+    }
+
+    #main-nav-items a {
+        border-bottom: 2px solid transparent; /*this fixes funk when changing a:hover for ham menu*/
+    }
+
+    #main-nav-items a:hover {
+        border-bottom: 2px solid lightblue;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+}

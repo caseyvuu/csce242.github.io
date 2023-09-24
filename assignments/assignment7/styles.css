@@ -1,0 +1,121 @@
+/* Structure */
+:root {
+    --num: 0%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #95ECB4;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+#exercise-one,
+#exercise-two {
+    background-color: white;
+    border: 5px solid #5EC37B;
+    padding: 100px;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li {
+    background-color: #5EC37B;
+    padding: 10px;
+    margin: 2px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#menu-items li {
+    text-align: center;
+}
+
+.padded-area {
+    padding: 5px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Typography */
+#error-message,
+#error-two {
+    color: red;
+}
+
+/* Hamburger Menu */
+#menu-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Thermometer */
+#thermometer-outline {
+    height: 500px;
+    width: 150px;
+    border: 5px solid black;
+    margin: auto;
+}
+
+#gradient {
+    height: 500px;
+    width: 150px;
+}
+
+.gfull {
+    background: linear-gradient(0deg, #d00019 var(--num), white var(--num) 100%);
+}
+
+/* Form */
+#text-boxes label,
+input {
+    display: inline-block;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    #menu-items {
+        display: flex;
+    }
+
+    #menu-items li {
+        flex: 1;
+    }
+
+    #menu-items a {
+        border-bottom: 3px solid transparent;
+    }
+
+    #menu-items a:hover {
+        border-bottom: 3px solid white;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+}
