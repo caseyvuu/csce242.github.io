@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Loop Assignment</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header id="main-header">
+            <h1>Loop Assignment</h1>
+        </header>
+        <section id="main-section" class="flex-container">
+            <section id="running-man" class="fix">
+                <h1>Running Man</h1>
+                <section>
+                    <img id="runner" src="images/walking.png">
+                </section>
+            </section>
+            <section id="fund-raising" class="fix">
+                <h1>Fund Raising</h1>
+                <h3>Goal: 10,000.00</h3>
+                <p>
+                    <label for="funds">Funds Raised:</label>
+                    <p id="error"></p>
+                    <input type="number" id="funds"/>
+                    <button id="donation-button">Display</button>
+                </p>
+                <div id="thermometer-outline">
+                    <div id="gradient" class="gfull"></div>
+                </div>
+            </section>
+        </section>
+    </body>
+
+</html>

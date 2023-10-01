@@ -47,6 +47,10 @@ h1, h2 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
 /* Larger Resolutions */
 @media only screen and (min-width: 900px) {
     .flex-container {
@@ -57,11 +61,6 @@ h1, h2 {
 
     .assignment {
         flex: 25%;
-        max-width:25%;
+        flex-grow: 0;
     }
-    
-    .fix-flex {
-        flex: 30%;
-    }
-
 }

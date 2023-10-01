@@ -1,0 +1,73 @@
+/* Structure */
+:root {
+    --percentage: 0%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightblue;
+}
+
+#main-header h1 {
+    text-align: center;
+    border: 5px solid dodgerblue;
+    background-color: beige;
+    padding: 10px;
+}
+
+#running-man {
+    border: 5px solid dodgerblue;
+    background-color: beige;
+    padding: 10px;
+}
+
+#fund-raising {
+    border: 5px solid dodgerblue;
+    background-color: beige;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Typography */
+#error {
+    color: red;
+}
+
+/* Image */
+
+#runner {
+    --goLeft: 0%;
+    position: relative;
+    left: var(--goLeft);
+}
+
+/* Thermometer */
+#thermometer-outline {
+    height: 500px;
+    width: 150px;
+    border: 5px solid black;
+    margin: auto;
+}
+
+#gradient {
+    height: 500px;
+    width: 150px;
+}
+
+.gfull {
+    background: linear-gradient(0deg, #d00019 var(--percentage), white var(--percentage) 100%);
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    .flex-container {
+        display:flex;
+    }
+
+    .fix {
+        flex: 1;
+    }
+}
