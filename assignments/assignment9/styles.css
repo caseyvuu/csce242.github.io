@@ -1,0 +1,47 @@
+/* Structure */
+body {
+    background-color: lightpink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+#main-rainbow,
+#main-quote {
+    width: 100%;
+    height: 100%;
+    background-color: plum;
+    border: 4px solid purple;
+}
+
+#rainbow {
+    width: 100%;
+    height: 100px;
+}
+
+#potOfGold {
+    position: relative;
+    top: -150px;
+    left: 360px;
+}
+
+.rainbowStrip {
+    width: 500px;
+    height: 30px;
+    margin: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+
+    .flex-container {
+        display: flex;
+    }
+
+}
