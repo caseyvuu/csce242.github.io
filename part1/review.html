@@ -27,22 +27,30 @@
         </header>
 
         <section id="review-page" class="flex-container">
-            <section id="review-left">
-                <section class="flex-container">
-                    <section class="space">
-                        <h1>Submit Your Own Review!</h1>
+            <section id="review-left" class="flex-column flex-one">
+                <section class="vertical-fix">
+                    <h1>Submit Your Own Review!</h1>
+                    <section id="review-input">
                         <label for="comment">Comments</label>
-                        <input type="text" id="comment"/>
+                        <input type="text" id="comment" class="big-textbox"/>
                         <label for="name">Name</label>
                         <input type="text" id="name"/>
                         <label for="upload">Upload an Image</label>
+                        <button>Choose File</button>
+                    </section>
+                    <section>
+                        <button class="button-style bigger-button">Submit</button>
                     </section>
                 </section>
             </section>
-            <section id="review-right">
+            <section>
+              <div class="vertical-line"></div>   
+            </section>
+            <section id="review-right" class="flex-one">
                 <section class="flex-container">
                     <section>
                         <h1>Customer Reviews</h1>
+                        <img id="review-img" src="images/sub1.png">
                     </section>
                 </section>
             </section>

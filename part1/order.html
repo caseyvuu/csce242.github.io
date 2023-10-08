@@ -28,10 +28,10 @@
 
         <section id="order-page">
             <h1>Online Orders</h1>
-            <section id="section-square">
-                
-                <section id="order-left">
+            <section class="section-square flex-container">
+                <section id="order-left" class="flex-one">
                     <section id="dropdown">
+                        <h2>Order Type:</h2>
                         <button class="drop">Dropdown</button>
                             <ul id="dropdown-choices">
                                 <li>In-Store Pick Up</li>
@@ -39,10 +39,20 @@
                                 <li>Delivery</li>
                             </ul>
                     </section>
+                    <section id="checkboxes" class="vertical-fix">
+                        <h2>Subs:</h2>
+                        <label><input type="checkbox" name="option1">Sal's Personal</label>
+                        <label><input type="checkbox" name="option2">The Hungry Man</label>
+                        <label><input type="checkbox" name="option3">The Mobster's Deluxe</label>
+                        <label><input type="checkbox" name="option4">The Godfather</label>
+                    </section>
                 </section>
 
-                <section id="order-right">
+                <button class="button-style bigger-button center-bottom">Continue</button>
 
+                <section id="order-right" class="flex-one">
+                    <h2>Notes</h2>
+                    <input type="text" id="notes"/>
                 </section>
                 
             </section>
