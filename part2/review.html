@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Semester Project Pt.2</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/200x30.gif"></a></li>
+                    <li id="nav-menu"><a href="menu.html">Menu</a></li>
+                    <li id="nav-order"><a href="order.html">Order Now</a></li>
+                    <li id="nav-reviews"><a href="review.html">Reviews</a></li>
+                    <li id="nav-about"><a href="about.html">About</a></li>
+                    <li id="nav-contact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="review-page" class="flex-container">
+            <section id="review-left" class="flex-column flex-one">
+                <section class="vertical-fix">
+                    <h1>Submit Your Own Review!</h1>
+                    <section id="review-input">
+                        <label for="comment">Comments</label>
+                        <input type="text" id="comment" class="big-textbox"/>
+                        <label for="name">Name</label>
+                        <input type="text" id="name"/>
+                        <label for="upload">Upload an Image</label>
+                        <button>Choose File</button>
+                    </section>
+                    <section>
+                        <button class="button-style bigger-button">Submit</button>
+                    </section>
+                </section>
+            </section>
+            <section>
+              <div class="vertical-line"></div>   
+            </section>
+            <section id="review-right" class="flex-one">
+                <section class="flex-container">
+                    <section>
+                        <h1>Customer Reviews</h1>
+                        <img id="review-img" src="images/sub1.png">
+                    </section>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

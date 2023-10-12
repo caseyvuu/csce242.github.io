@@ -30,6 +30,10 @@ a {
     border: 5px solid deepskyblue;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Images */
 img {
     max-width:80%;
@@ -40,6 +44,33 @@ img {
 }
 
 /* Navigation */
+#main-nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li {
+    padding: 10px;
+    margin: 20px;
+    border: 4px solid #4169E1;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:#4169E1;
+}
+
+#menu-items a {
+    border-bottom: 3px solid transparent;
+}
+
+#menu-items a:hover {
+    border-bottom: 3px solid deepskyblue;
+}
+
+#menu-items li {
+    text-align: center;
+}
 
 /* Typography */
 h1, h2 {
@@ -49,6 +80,14 @@ h1, h2 {
 
 p {
     text-align: center;
+}
+
+/* Hamburger Menu */
+#menu-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
 
 /* Larger Resolutions */
@@ -62,5 +101,17 @@ p {
     .assignment {
         flex: 25%;
         flex-grow: 0;
+    }
+
+    #menu-items {
+        display: flex;
+    }
+
+    #menu-items li {
+        flex: 1;
+    }
+
+    #menu-toggle {
+        display: none;
     }
 }

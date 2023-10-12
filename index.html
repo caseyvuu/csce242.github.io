@@ -5,17 +5,28 @@
 
     <head>
         <title>CSCE242 by Casey Vu</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
     </head>
     
     <header id="main-header">
         <h1>CSCE242</h1>
         <p>A class where HTML & Java are taught through Github and VSCode.</p>
+        <nav id="main-nav">
+            <div id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu-items" class="hidden">
+                <li id="menu-assignment"><a href="#">Assignments</a></li>
+                <li id="menu-project"><a href="#">Project</a></li>
+            </ul>
+        </nav>
     </header>
 
     <body>
-        <div id="main-pg" class="flex-container">
-            
+        <div id="assignment-pg" class="flex-container">
             <section class="assignment">
                 <a href="assignments/assignment1/index.html"><h2>Assignment 1</h2></a>
                 <a href="assignments/assignment1/index.html"><img src="images/ass1.png"></a>
@@ -69,7 +80,34 @@
                 <a href="assignments/assignment9/index.html"><img src="images/ass9.png"></a>
                     <p>Used an array to make a rainbow and go through different quotes.</p>     
             </section>
+        </div>
 
+        <div class="flex-container">
+            <section id="project-pg" class="hidden">
+                <section class="assignment">
+                    <a href="#"><h2>Idea</h2></a>
+                    <a href="#"><img src="images/ass9.png"></a>
+                        <p>PDF of the idea of the website I want to create.</p>     
+                </section>
+    
+                <section class="assignment">
+                    <a href="wireframe/index.html"><h2>Wireframe</h2></a>
+                    <a href="wireframe/index.html"><img src="images/ass9.png"></a>
+                        <p>PDF of the idea of the website I want to create.</p>     
+                </section>
+    
+                <section class="assignment">
+                    <a href="part1/index.html"><h2>HTML & CSS</h2></a>
+                    <a href="part1/index.html"><img src="images/ass9.png"></a>
+                        <p>PDF of the idea of the website I want to create.</p>     
+                </section>
+    
+                <section class="assignment">
+                    <a href="#"><h2>Colors and Pictures</h2></a>
+                    <a href="#"><img src="images/ass9.png"></a>
+                        <p>PDF of the idea of the website I want to create.</p>     
+                </section>
+            </section>
         </div>
     </body>
     <footer><p>&copy; caseyvuu.github.io</p></footer> 
