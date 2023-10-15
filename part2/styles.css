@@ -26,6 +26,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+.text-container {
+    margin-right: 20px;
+}
+
 .vertical-line {
     width: 2px; 
     background-color: #002DC8;
@@ -76,20 +80,16 @@ input[type="text"] {
 
 /* Home Page */
 #home-page {
-    justify-content: center;
+    padding: 5%;
+    margin-top: -10%;
 }
 
-#home-page p,
 #home-page h1 {
-    position: relative;
-    top: 20%;
-    text-align: left;
+    margin: 0;
 }
 
-#home-page img,
-#home-content {
-    margin: 30px;
-    padding: 100px;
+#home-page img {
+    max-width: 100%;
 }
 
 /* Menu Page */
@@ -181,26 +181,16 @@ input[type="text"] {
 
 /* About */
 #about-page {
-    justify-content: center;
+    padding: 5%;
+    margin-top: -10%;
 }
 
-#about-page p {
-    margin: -10px;
-}
-
-#about-page p,
 #about-page h1 {
-    position: relative;
-    top: 10%;
-    text-align: left;
-}
-#about-content {
-    padding-left: 125px;
+    margin: 0;
 }
 
 #about-page img {
-    margin: 30px;
-    padding: 100px;
+    max-width: 100%;
 }
 
 /* Contact Page */
@@ -285,27 +275,10 @@ input[type="text"] {
         margin-top: -10px;
     }
 
-    #home-page img,
-    #about-page img {
-        margin: 0 auto;
-        padding: 10px;
-        display: block; 
-    }
-
-    #about-page {
-        justify-content: center;
-    }
-    
-    #about-page p,
-    #about-page h1 {
-        position: relative;
-        top: 20%;
-        text-align: left;
-    }
-    
-    #about-content {
-        margin: 30px;
-        padding: 100px;
+    #about-page,
+    #home-page {
+        margin-top: 0;
+        text-align: center;
     }
     
 }
@@ -315,6 +288,18 @@ input[type="text"] {
     #menu-items,
     .flex-container {
         display: flex;
+    }
+
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .homeaboutcontainer {
+        display: flex;
+        align-items: center;
     }
 
     .flex-column {
