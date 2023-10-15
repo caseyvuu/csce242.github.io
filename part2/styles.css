@@ -1,131 +1,351 @@
-body,
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+/* Structure */
+body {
+    background-color: #C3D1FF;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
 }
 
-.parallax {
-  height: 100%;
-  opacity: 0.65;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; /* So we can center content inside */
+h1 {
+    font-size: xx-large;
+    text-align: center;
 }
 
-.home {
-  background-image: url("images/jasp-tree.jpg");
+.section-square {
+    background-color: #BABCED;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 4px solid #002DC8;
 }
 
-.face {
-  background-image: url("images/jasp-house.jpg");
+.center-bottom {
+    margin-top: auto; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
-.leash {
-  background-image: url("images/jasp-leash.jpg");
+.vertical-line {
+    width: 2px; 
+    background-color: #002DC8;
+    height: 100%; 
+    margin: 0 auto;
 }
 
-.info-section {
-  background-color: #595a5c;
-  font-size: 36px;
-  padding: 1%;
-  color: white;
+.horizontal-line {
+    width: 25%; 
+    background-color: #002DC8;
+    height: 2px; 
+    margin: 0 auto;
 }
 
-.info-section section {
-  padding: 0 10px;
-  margin: 0 10px;
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-img {
-  max-width: 90%;
-  max-height: 90%;
+.button-style {
+    background-color: #002DC8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    cursor: pointer;
 }
 
-.info-section img {
-  max-width: 300px;
+.button-style:hover {
+    background-color: #1E46CC;
+    transform: scale(1.05);
 }
 
-.text-center p {
-  width: 60%;
-  margin: auto;
+.bigger-button {
+    width: 200px;
+    height: 60px;
+    padding: 15px 30px;
+    font-size: 18px;
 }
 
-/* Main Menu */
-#main-menu {
-  z-index: 1;
-  background-color: #595a5c;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.hidden {
+    display: none;
 }
 
-#main-menu ul {
-  float: right;
-  overflow: hidden;
-  margin-right: 2%;
+/* Home Page */
+#home-page {
+    justify-content: center;
 }
 
-#main-menu li {
-  list-style-type: none;
-  display: inline-block;
+#home-page p,
+#home-page h1 {
+    position: relative;
+    top: 20%;
+    text-align: left;
 }
 
-#main-menu a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
+#home-page img,
+#home-content {
+    margin: 30px;
+    padding: 100px;
 }
 
-/* Typography */
-.parallax h1 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 50%;
-  font-size: 5em;
+/* Menu Page */
+#menu-left,
+#menu-right {
+    padding: 30px;
+    margin: 30px;
 }
 
-.parallax h3 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 25%;
-  font-size: 3em;
+#menu-page img {
+    width: 130px;
+    height: 130px;
+    filter: drop-shadow(5px 5px 15px blue);
+    padding: 10%;
+    margin: 10%;
 }
 
-.down-arrow {
-  text-decoration: none;
-  color: white;
-  font-size: 3em;
+.menu-padding {
+    padding: 20px;
 }
 
-/* Larger resolutions */
-@media only screen and (min-width: 600px) {
-  .columns {
-    display: flex;
-  }
-  .flex2 {
-    flex: 2;
-  }
 
-  .flex1 {
-    flex: 1;
-  }
+/* Order Page */
+#order-left,
+#order-right {
+    padding: 5%;
+    margin: auto;
 }
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
+#notes {
+    width: 100%;
+    height: 200px;
+}
+
+#checkboxes {
+    padding: 10px;
+}
+
+/* Dropdown Menu */
+ #dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown a {
+    text-decoration: none;
+    color: #002DC8;
+}
+
+.dropdown-button {
+    font-size: large;
+    font-weight: bold;
+    background-color: #002DC8;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    border: 3px solid #002DC8;
+}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Review Page */
+#review-left,
+#review-right {
+    padding-left: 12%;
+    margin-right: 100px;
+}
+
+#review-img {
+    width: 100%;
+    height: 70%;
+}
+
+#comment {
+    height: 100px;
+    width: 100%;
+}
+
+/* About */
+#about-page {
+    justify-content: center;
+}
+
+#about-page p {
+    margin: -10px;
+}
+
+#about-page p,
+#about-page h1 {
+    position: relative;
+    top: 10%;
+    text-align: left;
+}
+#about-content {
+    padding-left: 125px;
+}
+
+#about-page img {
+    margin: 30px;
+    padding: 100px;
+}
+
+/* Contact Page */
+#main-contact h1, 
+#main-contact p{
+    text-align: center;
+}
+
+#contact-left,
+#contact-right {
+    padding: 5%;
+    margin: auto;
+}
+
+#message {
+    height: 200px;
+    width: 100%;
+}
+
+/* Navigation */
+#nav-logo {
+    height: 100%;
+    width: 100%;
+}
+
+#main-nav {
+    margin-top: -20px;
+}
+
+#main-nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li {
+    background-color: #002DC8;
+    padding: 10px;
+    margin: 2px 0;
+}
+
+#main-nav a {
+    font-size:x-large;
+    text-decoration: none;
+    color:white;
+}
+
+#menu-items li {
+    text-align: center;
+}
+
+#menu-toggle {
+    margin-top: 20px;
+}
+
+/* Hamburger Menu */
+#menu-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Smaller Resolutions */
+@media (max-width: 900px){
+    #nav-logo {
+        width: 50%;
+        height: 50%;
+    }
+
+    #menu-left img,
+    #menu-right img {
+        width: 50%;
+        height: 50%;
+    }
+
+    #menu-toggle {
+        background-color: #002DC8;
+        padding: 10px;
+    }
+
+    #menu-items {
+        margin-top: -10px;
+    }
+
+    #home-page img,
+    #about-page img {
+        margin: 0 auto;
+        padding: 10px;
+        display: block; 
+    }
+
+    #about-page {
+        justify-content: center;
+    }
+    
+    #about-page p,
+    #about-page h1 {
+        position: relative;
+        top: 20%;
+        text-align: left;
+    }
+    
+    #about-content {
+        margin: 30px;
+        padding: 100px;
+    }
+    
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    #menu-items,
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .vertical-fix {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px; 
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    #menu-items li,
+    .flex-one {
+        flex: 1;
+    }
+
+    #menu-items a {
+        border-bottom: 3px solid transparent;
+    }
+
+    #menu-items a:hover {
+        border-bottom: 3px solid white;
+    }
+
+    #menu-toggle {
+        display: none;
+    } 
 }
