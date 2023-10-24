@@ -155,40 +155,6 @@ input[type="text"] {
     padding: 10px;
 }
 
-/* Dropdown Menu */
- #dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-#dropdown a {
-    text-decoration: none;
-    color: #002DC8;
-}
-
-.dropdown-button {
-    font-size: large;
-    font-weight: bold;
-    background-color: #002DC8;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    border: 3px solid #002DC8;
-}
-
-#dropdown:hover .dropdown-content {
-    display: block;
-}
-
 /* Review Page */
 #review-left,
 #review-right {
@@ -201,7 +167,7 @@ input[type="text"] {
     height: 70%;
 }
 
-#comment {
+#review-message {
     height: 100px;
     width: 100%;
 }
@@ -230,12 +196,12 @@ input[type="text"] {
     margin-left: 15%;
 }
 
-#message {
+#contact-message {
     height: 200px;
     width: 100%;
 }
 
-#result {
+#contact-result {
     text-align: center;
 }
 
@@ -308,6 +274,10 @@ input[type="text"] {
     #home-page {
         margin-top: 0;
         text-align: center;
+    }
+
+    #contact-content {
+        margin: auto;
     }
 }
 

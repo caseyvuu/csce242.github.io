@@ -33,20 +33,21 @@
                     <form id="review-form" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="apikey" value="c1526a4b-8264-4dae-9a7a-cfa4fcddc016">
                         <section id="review-input">
-                            <label for="comment">Comments</label>
-                            <input type="text" id="comment" class="big-textbox" required/>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" required/>
-                            <label for="email">Email</label>
-                            <input type="text" id="email" required/>
+                            <label for="review-message">Comments</label>
+                            <input type="text" id="review-message" class="big-textbox" required/>
+                            <label for="review-name">Name</label>
+                            <input type="text" id="review-name" required/>
+                            <label for="review-email">Email</label>
+                            <input type="text" id="review-email" required/>
                             <label for="upload">Upload an Image</label>
                             <button>Choose File</button>
                         </section>
                         <section class="padding">
-                            <button class="button-style bigger-button">Submit</button>
-                            <p id="result2"></p>
+                            <button type="submit" class="button-style bigger-button center-bottom">Submit</button>
+                            <p id="review-result"></p>
                         </section>
                     </form>
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
                 </section>
             </section>
             <section>

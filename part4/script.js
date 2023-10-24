@@ -6,9 +6,9 @@ const submitContactForm = (e) => {
     e.preventDefault();
     
     const form = document.getElementById("contact-form");
-    const name = form.elements["name"].value;
-    const email = form.elements["email"].value;
-    const message = form.elements["message"].value;
+    const name = form.elements["contact-name"].value;
+    const email = form.elements["contact-email"].value;
+    const message = form.elements["contact-message"].value;
 
     console.log(name);
     console.log(email);
@@ -17,7 +17,7 @@ const submitContactForm = (e) => {
 
 const showContactResult = async (e) => {
     e.preventDefault();
-    const result = document.getElementById("result");
+    const result = document.getElementById("contact-result");
     let response = await getContactResult();
     if (response.status == 200) {
       result.innerHTML = "Email Successfully Sent";
@@ -26,12 +26,12 @@ const showContactResult = async (e) => {
     }
   };
   
-  const getContactResult = async (e) => {
+const getContactResult = async (e) => {
     const form = document.getElementById("contact-form");
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-    const result = document.getElementById("result");
+    const result = document.getElementById("contact-result");
     result.innerHTML = "Please wait...";
   
     try {
@@ -46,18 +46,18 @@ const showContactResult = async (e) => {
       return response;
     } catch (error) {
       console.log(error);
-      document.getElementById("result").innerHTML =
+      document.getElementById("contact-result").innerHTML =
         "Sorry your email couldn't be sent";
     }
   };
 
-  const submitReviewForm = (e) => {
+const submitReviewForm = (e) => {
     e.preventDefault();
     
     const form = document.getElementById("review-form");
-    const message = form.elements["message"].value;
-    const name = form.elements["name"].value;
-    const email = form.elements["email"].value;
+    const message = form.elements["review-message"].value;
+    const name = form.elements["review-name"].value;
+    const email = form.elements["review-email"].value;
 
     console.log(message);
     console.log(name);
@@ -66,21 +66,21 @@ const showContactResult = async (e) => {
 
 const showReviewResult = async (e) => {
     e.preventDefault();
-    const result = document.getElementById("result2");
+    const result = document.getElementById("review-result");
     let response = await getReviewResult();
     if (response.status == 200) {
       result.innerHTML = "Review Successfully Sent";
     } else {
       result.innerHTML = "Sorry, your review was not sent.";
     }
-  };
+};
   
-  const getReviewResult = async (e) => {
+const getReviewResult = async (e) => {
     const form = document.getElementById("review-form");
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-    const result = document.getElementById("result2");
+    const result = document.getElementById("review-result");
     result.innerHTML = "Please wait...";
   
     try {
@@ -95,13 +95,15 @@ const showReviewResult = async (e) => {
       return response;
     } catch (error) {
       console.log(error);
-      document.getElementById("result2").innerHTML =
+      document.getElementById("review-result").innerHTML =
         "Sorry your review couldn't be sent";
     }
-  };
+};
 
 window.onload = () => {
     document.getElementById("menu-toggle").onclick = toggleNav;
+    // document.getElementById("contact-form").onsubmit = submitContactForm;
+    // document.getElementById("review-form").onsubmit = submitReviewForm;
     document.getElementById("contact-form").onsubmit = async function (e) {
         e.preventDefault();
         submitContactForm(e);

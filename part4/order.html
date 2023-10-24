@@ -31,12 +31,11 @@
             <section class="section-square flex-container">
                 <section id="order-left" class="flex-one">
                     <div id="dropdown">
-                        <button class="dropdown-button">Order Type</button>
-                        <div class="dropdown-content">
-                            <a href="#">In-Store Pick Up</a>
-                            <a href="#">Drive-thru Pick Up</a>
-                            <a href="#">Delivery</a>
-                        </div>
+                        <label for="order-type"><strong>Order Type</strong></label>
+                        <select name="Order Type">
+                            <option value="in-store">In-Store Pick Up</option>
+                            <option value="drive-thru">Drive-thru Pick Up</option>
+                        </select>
                     </div>
                     <section id="checkboxes" class="vertical-fix">
                         <h2>Subs:</h2>
@@ -46,7 +45,7 @@
                         <label><input type="checkbox" name="option4">The Godfather</label>
                     </section>
                 </section>
-                <button class="button-style bigger-button center-bottom">Continue</button>
+                <button type="submit" class="button-style bigger-button center-bottom">Submit</button>
                 <section id="order-right" class="flex-one">
                     <h2>Notes</h2>
                     <input type="text" id="notes"/>
