@@ -102,8 +102,8 @@ const getReviewResult = async (e) => {
 
 window.onload = () => {
     document.getElementById("menu-toggle").onclick = toggleNav;
-    // document.getElementById("contact-form").onsubmit = submitContactForm;
-    // document.getElementById("review-form").onsubmit = submitReviewForm;
+    // document.getElementById("contact-button").onclick = submitContactForm;
+    // document.getElementById("review-button").onclick = submitReviewForm;
     document.getElementById("contact-form").onsubmit = async function (e) {
         e.preventDefault();
         submitContactForm(e);
