@@ -1,0 +1,49 @@
+/* Body */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a,
+h3 {
+    text-decoration: none;
+    color: black;
+}
+
+#parent-section {
+    background-color: #FFC592;
+}
+
+.style-it {
+    background-color: #FFDFC3;
+    border: 5px solid #D36300;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.img-format {
+    width: 20%;
+    height: 20%;
+    border: 5px solid black; 
+    margin: auto;
+}
+
+.big-image {
+    width: 25%;
+    height: 25%;
+    border: 5px solid dodgerblue;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    #main-content {
+      flex-direction: column;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+}
