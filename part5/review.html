@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Semester Project Pt.2</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/logo.png"></a></li>
+                    <li id="nav-menu"><a href="menu.html">Menu</a></li>
+                    <li id="nav-order"><a href="order.html">Order Now</a></li>
+                    <li id="nav-reviews"><a href="review.html">Reviews</a></li>
+                    <li id="nav-about"><a href="about.html">About</a></li>
+                    <li id="nav-contact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="review-page" class="flex-container">
+            <section id="review-left" class="flex-column flex-one">
+                <section class="vertical-fix">
+                    <h1>Submit Your Own Review!</h1>
+                    <form id="review-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="apikey" value="c1526a4b-8264-4dae-9a7a-cfa4fcddc016">
+                        <section id="review-input">
+                            <label for="review-message">Comments</label>
+                            <input type="text" id="review-message" class="big-textbox" required/>
+                            <label for="review-name">Name</label>
+                            <input type="text" id="review-name" required/>
+                            <label for="review-email">Email</label>
+                            <input type="text" id="review-email" required/>
+                            <label for="upload">Upload an Image</label>
+                            <button>Choose File</button>
+                        </section>
+                        <section class="padding">
+                            <button id="review-button" type="submit" class="button-style bigger-button center-bottom">Submit</button>
+                            <p id="review-result"></p>
+                        </section>
+                    </form>
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
+                </section>
+            </section>
+            <section>
+              <div class="vertical-line"></div>   
+            </section>
+            <section id="review-right" class="flex-one">
+                <section class="flex-container">
+                    <section>
+                        <h1>Customer Reviews</h1>
+                        <img id="review-img" src="images/sub1.png">
+                    </section>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>
