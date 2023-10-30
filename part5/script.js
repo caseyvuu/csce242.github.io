@@ -113,66 +113,32 @@ const getMenu = async () => {
 };
 
 const showMenuItems = async () => {
-  let items = await getMenuItem();
-  let itemsSection = document.getElementById("main-content");
+  const items = await getMenu();
+  const itemsSection = document.getElementById("menu-content");
 
   items.forEach((item) => {
-      itemsSection.append(getMovieItem(item));
-    });
-  };
+    itemsSection.appendChild(createMenuItemElement(item));
+  });
+};
 
-const getMenuItem = (item) => {
-  const itemsSection = document.createElement("section");
-  itemsSection.classList.add("style-it");
-  itemsSection.classList.add("flex-container");
-
-  const itemInformation = document.createElement("section");
-  itemsSection.append(itemInformation);
-
-  const p = document.createElement("p");
-  itemInformation.append(p);
+const createMenuItemElement = (item) => {
+  const menuItemElement = document.createElement("div");
+  menuItemElement.classList.add("menu-item");
 
   const h3 = document.createElement("h3");
-  h3.innerText = movie.title; 
-  p.append(h3);
+  h3.innerText = item.name;
 
-  const p1 = document.createElement("p"); 
-  p1.textContent = `Director: ${movie.director}`; 
-  p.append(p1); 
+  const p = document.createElement("p");
+  p.textContent = item.description;
 
-  const p2 = document.createElement("p");
-  p2.textContent = `Actors: ${movie.actors}`; 
-  p.append(p2); 
+  const img = document.createElement("img");
+  img.src = item.image;
 
-  const p3 = document.createElement("p");
-  p3.textContent = `Year: ${movie.year}`; 
-  p.append(p3); 
+  menuItemElement.appendChild(h3);
+  menuItemElement.appendChild(p);
+  menuItemElement.appendChild(img);
 
-  const p4 = document.createElement("p");
-  p4.textContent = `Genre: ${movie.genres}`; 
-  p.append(p4); 
-
-  const p5 = document.createElement("p");
-  p5.textContent = `${movie.description}`; 
-  p.append(p5); 
-
-  const img = document.createElement("img"); 
-  img.src = movie.img;
-  img.src = `https://portiaportia.github.io/json/${movie.img}`;
-  img.classList.add("img-format");
-  moviesSection.append(img); 
-
-  img.onmouseover = () => {
-      img.classList.add("big-image");
-      moviesSection.classList.remove("hidden");
-  }
-
-  img.onmouseout = () => {
-     img.classList.remove("big-image");
-     moviesSection.classList.add("hidden");
-  }
-
-  return moviesSection;
+  return menuItemElement;
 };
 
 window.onload = () => {
@@ -187,5 +153,5 @@ window.onload = () => {
         submitReviewForm(e);
         await showReviewResult(e);
     };
-    showMovies();
+    showMenuItems();
 }
