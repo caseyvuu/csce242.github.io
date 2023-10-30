@@ -284,6 +284,7 @@ input[type="text"] {
 
 /* Larger Resolutions */
 @media (min-width:900px){
+    #menu-page,
     #menu-items,
     .flex-container {
         display: flex;
