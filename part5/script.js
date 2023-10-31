@@ -123,7 +123,6 @@ const getMenu = async () => {
   
   const createMenuItemElement = (item) => {
   const menuItemElement = document.createElement("div");
-  // menuItemElement.classList.add("menu-item");
   
   const h3 = document.createElement("h3");
   h3.innerText = item.name;
