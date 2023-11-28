@@ -120,18 +120,28 @@ input[type="text"] {
 }
 
 /* Menu Page */
-#menu-left,
-#menu-right {
-    padding: 30px;
-    margin: 30px;
+#menu-content h3, 
+#menu-content p {
+    text-align: center;
 }
 
-#menu-page img {
-    width: 130px;
-    height: 130px;
-    filter: drop-shadow(5px 5px 15px blue);
-    padding: 10%;
-    margin: 10%;
+#menu-content img {
+    width: 15%;
+    height: 15%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.menu-style {
+    border: 5px solid #002DC8;
+    background-color: #92ABFF;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-padding {
@@ -170,6 +180,14 @@ input[type="text"] {
 #review-message {
     height: 100px;
     width: 100%;
+}
+
+#review-text {
+    width: 95%;
+    height: 40%;
+    background-color: #92ABFF;
+    border: 4px solid #002DC8;
+    padding: 10px;
 }
 
 /* About */

@@ -101,48 +101,81 @@ const getReviewResult = async (e) => {
 };
 
 const getMenu = async () => {
-  const url = "https://caseyvuu.github.io/part5/menu.json";
-  
-  try {
-    const link = await fetch(url);
-    return await link.json();
-  } catch (error) {
-    console.log(error);
-  }
-  };
+    const url = "https://caseyvuu.github.io/part5/menu.json";
+    
+    try {
+      const link = await fetch(url);
+      return await link.json();
+    } catch (error) {
+      console.log(error);
+    }
+};
   
   const showMenuItems = async () => {
-  let items = await getMenu();
-  
-  let itemsSection = document.getElementById("menu-content");
-  
-  items.forEach((item) => {
-    itemsSection.appendChild(createMenuItemElement(item));
-  });
-  };
+    let items = await getMenu();
+    let itemsSection = document.getElementById("menu-content");
+
+    items.forEach((item) => {
+      itemsSection.appendChild(createMenuItemElement(item));
+    });
+};
   
   const createMenuItemElement = (item) => {
-  const menuItemElement = document.createElement("div");
-  
-  const h3 = document.createElement("h3");
-  h3.innerText = item.name;
-  
-  const p = document.createElement("p");
-  p.textContent = item.description;
-  
-  const img = document.createElement("img");
-  img.src = item.image;
-  
-  menuItemElement.appendChild(h3);
-  menuItemElement.appendChild(p);
-  menuItemElement.appendChild(img);
-  
-  return menuItemElement;
-  };
+    const menuItemElement = document.createElement("div");
+    menuItemElement.classList.add("menu-padding", "menu-style");
+
+    const section1 = document.createElement("section");
+
+    const h3 = document.createElement("h3");
+    h3.innerText = item.name;
+    const p = document.createElement("p");
+    p.textContent = item.description;
+    section1.appendChild(h3);
+    section1.appendChild(p);
+    
+    const section2 = document.createElement("section");
+
+    const img = document.createElement("img");
+    img.src = item.image;
+    section2.appendChild(img);
+    
+    menuItemElement.appendChild(section1);
+    menuItemElement.appendChild(section2);
+    
+    return menuItemElement;
+};
+
+let reviews = ["The Godfather was maybe the best italian sub I've ever had! - John D.", 
+"I easily reccomend the Mobster's Deluxe, was a good hearty sub - Casey V.", 
+"The bacon on the Hungry Man is devine - Susan K.",
+"The Godfather is superior to any NYC sub - Nancy D.",
+"Sal's Personal is the best sub ever!!! - Jonathan H."];
+
+const reviewMethod = () => {
+    const reviewText = document.querySelector("#review-text");
+
+    let reviewIndex = 0;
+
+    const updateReview = () => {
+        console.log(reviewIndex);
+        if(reviewIndex == reviews.length){
+          reviewIndex = 0;
+        }
+
+        reviewText.innerHTML = reviews[reviewIndex];
+
+        reviewIndex++;
+    };
+
+    updateReview();
+
+    setInterval(updateReview, 2000);
+}
 
 window.onload = () => {
     document.getElementById("menu-toggle").onclick = toggleNav;
     showMenuItems();
+    reviewMethod();
     document.getElementById("contact-form").onsubmit = async function (e) {
         e.preventDefault();
         submitContactForm(e);
