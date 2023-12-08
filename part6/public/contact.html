@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Semester Project Pt.2</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/logo.png"></a></li>
+                    <li id="nav-menu"><a href="menu.html">Menu</a></li>
+                    <li id="nav-order"><a href="order.html">Order Now</a></li>
+                    <li id="nav-reviews"><a href="review.html">Reviews</a></li>
+                    <li id="nav-about"><a href="about.html">About</a></li>
+                    <li id="nav-contact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <section id="main-contact">
+                <h1>Contact Big Sal's Subs, LLC</h1>
+                <p>Send us a message and we’ll get back to you as soon as possible.  Looking forward to hearing from you!</p>
+            </section>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="apikey" value="c1526a4b-8264-4dae-9a7a-cfa4fcddc016">
+                <section class="section-square flex-container">
+                    <section id="contact-content">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" required/>
+                            <label for="contact-email">Email</label>
+                            <input type="text" id="contact-email" required/>  
+                            <label for="contact-message">Message</label>
+                            <input type="text" id="contact-message"/>    
+                            <button id="contact-button" type="submit" class="bigger-button button-style center-bottom">Submit</button>
+                            <p id="contact-result"></p>
+                    </section>
+                </section>    
+            </form>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+        </section>
+    </body>
+</html>

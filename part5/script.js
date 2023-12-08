@@ -64,41 +64,41 @@ const submitReviewForm = (e) => {
     console.log(email);
 }
 
-const showReviewResult = async (e) => {
-    e.preventDefault();
-    const result = document.getElementById("review-result");
-    let response = await getReviewResult();
-    if (response.status == 200) {
-      result.innerHTML = "Review Successfully Sent";
-    } else {
-      result.innerHTML = "Sorry, your review was not sent.";
-    }
-};
+// const showReviewResult = async (e) => {
+//     e.preventDefault();
+//     const result = document.getElementById("review-result");
+//     let response = await getReviewResult();
+//     if (response.status == 200) {
+//       result.innerHTML = "Review Successfully Sent";
+//     } else {
+//       result.innerHTML = "Sorry, your review was not sent.";
+//     }
+// };
   
-const getReviewResult = async (e) => {
-    const form = document.getElementById("review-form");
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-    const result = document.getElementById("review-result");
-    result.innerHTML = "Please wait...";
+// const getReviewResult = async (e) => {
+//     const form = document.getElementById("review-form");
+//     const formData = new FormData(form);
+//     const object = Object.fromEntries(formData);
+//     const json = JSON.stringify(object);
+//     const result = document.getElementById("review-result");
+//     result.innerHTML = "Please wait...";
   
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: json,
-      });
-      return response;
-    } catch (error) {
-      console.log(error);
-      document.getElementById("review-result").innerHTML =
-        "Sorry your review couldn't be sent";
-    }
-};
+//     try {
+//       const response = await fetch("https://api.web3forms.com/submit", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           Accept: "application/json",
+//         },
+//         body: json,
+//       });
+//       return response;
+//     } catch (error) {
+//       console.log(error);
+//       document.getElementById("review-result").innerHTML =
+//         "Sorry your review couldn't be sent";
+//     }
+// };
 
 const getMenu = async () => {
     const url = "https://caseyvuu.github.io/part5/menu.json";

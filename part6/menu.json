@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Sal's Personal",
+      "description": "A delightful combination of crispy breaded chicken cutlets, Italian bread, fresh mozzarella, garden-fresh tomatoes, and a drizzle of balsamic glaze.",
+      "image": "images/sals.jpg"
+    },
+    {
+      "name": "The Hungry Man",
+      "description": "Piled high with succulent roast beef, tender turkey, savory ham, crispy bacon, a variety of mouthwatering cheeses, and fresh, crisp veggies.",
+      "image": "images/hungryman.jpg"
+    },
+    {
+      "name": "The Mobster's Deluxe",
+      "description": "Soft Italian bread stuffed with tender meatballs, homemade marinara sauce, melted cheese, and your choice of fresh veggies.",
+      "image": "images/mobsters.jpg"
+    },
+    {
+      "name": "The Godfather",
+      "description": "Layers of freshly baked Italian bread, premium Genoa salami, spicy pepperoni, tender ham, provolone cheese, crisp lettuce, ripe tomatoes, red onions, banana peppers, and zesty Italian dressing.",
+      "image": "images/godfather.jpg"
+    }
+]
+  

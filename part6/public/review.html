@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Semester Project Pt.2</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+        <script src="review.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/logo.png"></a></li>
+                    <li id="nav-menu"><a href="menu.html">Menu</a></li>
+                    <li id="nav-order"><a href="order.html">Order Now</a></li>
+                    <li id="nav-reviews"><a href="review.html">Reviews</a></li>
+                    <li id="nav-about"><a href="about.html">About</a></li>
+                    <li id="nav-contact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="review-page" class="flex-container">
+            <section id="review-left" class="flex-column flex-one">
+                <section class="vertical-fix">
+                    <h1>Submit Your Own Review!</h1>
+                    <p id="data-status"></p>
+                    <form id="review-form" method="POST">
+                        <input type="text" name="_id" value="-1" class="hidden"/>
+                        <section id="review-input">
+                            <p>
+                                <label for="message">Review Message:</label>
+                                <input type="text" id="message" name="message" class="" required/>
+                            </p>
+                            <p>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" class="" required/>
+                            </p>
+                        </section>
+                        <section class="padding">
+                            <button id="review-button" type="submit" class="button-style bigger-button center-bottom">Submit</button>
+                            <p id="review-result"></p>
+                        </section>
+                    </form>
+                </section>
+            </section>
+
+            <section>
+              <div class="vertical-line"></div>   
+            </section>
+            <section id="review-right" class="flex-one">
+                <section class="flex-container">
+                    <section id="review-switch">
+                        <h1>Customer Reviews</h1>
+                        <div id="reviews"></div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>
